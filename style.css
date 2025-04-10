@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Avenir+Next+Condensed:wght@400;700&display=swap');
+
+body {
+  font-family: 'Avenir Next Condensed', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#itemInput {
+  flex: 2;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 26px;
+  font-weight: bold;
+  width: 300px; /* Reduced width */
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  white-space: nowrap; /* Prevent double-lining */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long content */
+}
+
+.item span {
+  flex: 2;
+}
+
+.item input {
+  flex: 1;
+  margin: 0 40px;
+  padding: 5px;
+  text-align: center;
+  font-size: medium;
+}
+
+/* Apply square shape specifically to + and - buttons */
+.item button:not(.removeButton) {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+/* Restore original styles for the Remove button */
+.item .removeButton {
+  background-color: #FF8700;
+  font-size: 16px;
+  padding: 5px;
+  width: auto; /* Adjust to content */
+  height: auto; /* Adjust to content */
+}
+
+button:hover {
+  background-color: #FF8700;
+}
+
+#exportButton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#fileInput {
+  display: none;
+}
